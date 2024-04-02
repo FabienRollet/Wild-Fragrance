@@ -1,6 +1,15 @@
+import {useState} from "react"
 import PropTypes from "prop-types";
+import { FaStar, FaViacoin } from "react-icons/fa6";
+
 export default function Fragrance({ list }) {
 	console.log(list);
+	const [favoris, setFavoris] = useState([]);
+
+	const favorisClicked = (item) => {
+		setFavoris([...favoris, item])		
+	}
+	console.log(favoris)
 	return (
 		<article className="articleBackground">
 			{list.map((item) => (
@@ -10,6 +19,7 @@ export default function Fragrance({ list }) {
 					<p>{item.description}</p>
 					<p>{item.price} €</p>
 					<button type="button">Ajouter au panier</button>
+					<button onClick={()=>favorisClicked(item)}>Favoris<FaStar /></button>
 				</section>
 			))}
 		</article>
