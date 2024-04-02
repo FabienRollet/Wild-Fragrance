@@ -16,12 +16,12 @@ export default function Fragrance({list}){
 </article>
 )}
 Fragrance.propTypes = {
-    list: PropTypes.arrayOf({
-        item: PropTypes.shape({
+    list: PropTypes.arrayOf(
+            PropTypes.shape({
             img: PropTypes.string.isRequired,
             name: PropTypes.string.isRequired,
             price: PropTypes.number.isRequired,
             description: PropTypes.string.isRequired,
         }).isRequired,
-    }).isRequired,
+    ).isRequired,
 }
