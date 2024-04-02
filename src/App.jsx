@@ -1,3 +1,4 @@
+
 import './App.css'
 //import NavBar from "./"
 import Fragrance from './components/fragrance.jsx';
@@ -11,5 +12,7 @@ function App() {
     </>
   )
 }
+
+
 
 export default App
