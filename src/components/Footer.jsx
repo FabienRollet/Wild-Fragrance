@@ -2,9 +2,9 @@ function Footer() {
 
     return (
         <ul>
-            <li><a><img src="https://icones8.fr/icon/13912/facebook" alt="Logo Facebook"/></a></li>
-            <li><a><img src="https://icones8.fr/icon/bG29Ckcdp6YP/twitterx" alt="Logo Twitter"/></a></li>
-            <li><a><img src="https://icones8.fr/icon/12599/github" alt="Logo GitHub"/></a></li>
+            <li><a><img src="https://img.icons8.com/?size=256&id=13912&format=png" alt="Logo Facebook"/></a></li>
+            <li><a><img src="https://img.icons8.com/?size=256&id=bG29Ckcdp6YP&format=png" alt="Logo Twitter"/></a></li>
+            <li><a><img src="https://img.icons8.com/?size=256&id=12599&format=png" alt="Logo GitHub"/></a></li>
         </ul>
     )
 }
