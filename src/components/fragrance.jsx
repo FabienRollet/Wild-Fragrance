@@ -1,12 +1,11 @@
 import PropTypes from "prop-types";
-export default function Fragrance({ list, count, handleClickDown, handleClickUp, isFavourite, handleClick}) {
-
+export default function Fragrance({ list, count, handleClickDown, handleClickUp, handleClick, isFavourite}) {
 
 	return (
-		<>
-			<section>
-				<p>🛒 {count}</p>
-			</section>
+		<main>
+			<header>
+					<p>🛒 {count}</p>
+				</header>
 			<section className="articleBackground">
 				{list.map((item) => (
 					<article key={item.name}>
@@ -14,13 +13,15 @@ export default function Fragrance({ list, count, handleClickDown, handleClickUp,
 						<h2> {item.name}</h2>
 						<p>{item.description}</p>
 						<p>{item.price} €</p>
-						<button type="button" onClick={(handleClickDown)}> - </button>
-						<button type="button" onClick={(handleClickUp)}> + </button>
-						<button onClick={handleClick}>{isFavourite ? "❤️" : "🖤"}</button>
+						<footer className="article-footer">
+						<button type="button" onClick={(handleClickDown)} className="down"> - </button>
+						<button type="button" onClick={(handleClickUp)} className="up"> + </button>
+						<button type="button" onClick={(handleClick)} className="heart">Ajouter aux favoris</button>
+						</footer>
 					</article>
 				))}
 			</section>
-		</>
+		</main>
 	);
 }
 Fragrance.propTypes = {

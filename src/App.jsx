@@ -18,10 +18,12 @@ function App() {
       ? setCount(count - 1)
       : count;
   }
- 
-  const [isFavourite, setIsFavourite] = useState(list.isFavorite);
+
+  // const [isFavourite, setIsFavourite] = useState(false);
+
   const handleClick = () => {
-    setIsFavourite(!isFavourite);
+    // setIsFavourite(!isFavourite);
+    alert('Article ajouté aux favoris');
   }
 
   return (
