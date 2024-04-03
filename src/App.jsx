@@ -18,16 +18,17 @@ function App() {
       ? setCount(count - 1)
       : count;
   }
-
-  const [favoris, setFavoris] = useState([]);
-	const favorisClicked = (item) => {
-	setFavoris([...favoris, item])};
+ 
+  const [isFavourite, setIsFavourite] = useState(list.isFavorite);
+  const handleClick = () => {
+    setIsFavourite(!isFavourite);
+  }
 
   return (
     <>
       <NavBar/>
       <img src="src/assets/Img/background.jpg" width={1000} height={250}></img>
-      <Fragrance list={list} count={count} setCount={setCount} handleClickDown={handleClickDown} handleClickUp={handleClickUp} />
+      <Fragrance list={list} count={count} handleClickDown={handleClickDown} handleClickUp={handleClickUp} handleClick={handleClick} isFavourite={isFavourite} />
       <Footer/>
     </>
   );

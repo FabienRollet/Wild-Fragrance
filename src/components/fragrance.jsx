@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import { FaStar, FaViacoin } from "react-icons/fa6"
-export default function Fragrance({ list, count, setCount, handleClickDown, handleClickUp,favorisClicked }) {
+export default function Fragrance({ list, count, handleClickDown, handleClickUp, isFavourite, handleClick}) {
+
 
 	return (
 		<>
@@ -16,8 +16,7 @@ export default function Fragrance({ list, count, setCount, handleClickDown, hand
 						<p>{item.price} €</p>
 						<button type="button" onClick={(handleClickDown)}> - </button>
 						<button type="button" onClick={(handleClickUp)}> + </button>
-						<button type="button" onClick={()=>favorisClicked(item)}/>Favoris<FaStar/>
-						<button onClick={()=>favorisClicked(item)}>Favoris<FaStar /></button>
+						<button onClick={handleClick}>{isFavourite ? "❤️" : "🖤"}</button>
 					</article>
 				))}
 			</section>
