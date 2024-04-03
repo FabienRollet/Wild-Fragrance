@@ -4,18 +4,21 @@ const list = [
     name: "fragrance1",
     price: 99.99,
     description: "Nouveau parfum qui sent bon ",
+    isFavourite : false,
   },
   {
     img: "src/assets/Img/fragrance02.jpg",
     name: "fragrance2",
     price: 99.99,
     description: "Nouveau parfum qui sent bon ",
+    isFavourite : false,
   },
   {
     img: "src/assets/Img/fragrance03.jpg",
     name: "fragrance3",
     price: 99.99,
     description: "Nouveau parfum qui sent bon ",
+    isFavourite : false,
   },
 ];
 
