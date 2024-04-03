@@ -28,7 +28,7 @@ function App() {
     <>
       <NavBar/>
       <img src="src/assets/Img/background.jpg"></img>
-      <Fragrance list={list} handleClickUp={handleClickUp} handleClickDown={handleClickDown} handleClick={handleClick}/>
+      <Fragrance list={list} count={count} handleClickUp={handleClickUp} handleClickDown={handleClickDown} handleClick={handleClick}/>
       <Footer/>
     </>
   );
