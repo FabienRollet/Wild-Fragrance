@@ -1,4 +1,3 @@
-import {useState} from "react"
 import PropTypes from "prop-types";
 export default function Fragrance({ list, count, handleClickDown, handleClickUp, isFavourite, handleClick}) {
 

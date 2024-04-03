@@ -1,20 +1,20 @@
 function NavBar() {
 
     return (
-  <>
-    <img src="src/assets/Img/logo.png" alt="Logo Wild Code School" height={30} width={30} />
+  <nav>
+    <img src="src/assets/Img/logo.png" alt="Logo Wild Code School" />
     <ul>
       <li>
-        <a href="">Lorem</a>
+        <a href="">Homme</a>
       </li>
       <li>
-        <a href="">Lorem</a>
+        <a href="">Femme</a>
       </li>
       <li>
-        <a href="">Lorem</a>
+        <a href="">Mixte</a>
       </li>
     </ul>
-  </>
+  </nav>
   )
 }
 
