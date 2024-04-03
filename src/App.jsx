@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <NavBar/>
-      <img src="src/assets/Img/background.jpg" width={1000} height={250}></img>
+      <img src="src/assets/Img/background.jpg"></img>
       <Fragrance list={list} />
       <Footer/>
     </>

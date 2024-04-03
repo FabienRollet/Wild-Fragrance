@@ -7,4 +7,55 @@
 body {
   min-height: 100vh;
   min-height: 100svh;
+  background-color: rgba(236, 218, 194, 0.8);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(95, 57, 22, 0.8);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+nav {
+  background-color: #DABA9D;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10rem;
+}
+
+nav > img {
+  width: 6rem;
+}
+
+nav > ul {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+
+nav > a {
+  color: rgba(142, 85, 32, 0.8);
+}
+
+footer {
+  background-color: #DABA9D;
+  height: 3rem;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+footer > ul > li > a > img {
+  width: 3rem;
 }
